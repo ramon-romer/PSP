@@ -1,0 +1,340 @@
+2025-11-10 19:02:17 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 21.0.8 with PID 8444 (C:\Users\rromero2106\Desktop\Github\PSP\user-api-server\target\classes started by rromero2106 in C:\Users\rromero2106\Desktop\Github\PSP\user-api-server)
+2025-11-10 19:02:17 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-10 19:02:17 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 19:02:19 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-10 19:02:20 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-11-10 19:02:20 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-11-10 19:02:42 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 21.0.8 with PID 21008 (C:\Users\rromero2106\Desktop\Github\PSP\user-api-server\target\classes started by rromero2106 in C:\Users\rromero2106\Desktop\Github\PSP\user-api-server)
+2025-11-10 19:02:42 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-10 19:02:42 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 19:02:44 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-10 19:02:45 INFO  [main] ceu.dam.ad.users.App - Started App in 2.513 seconds (process running for 3.181)
+2025-11-10 19:12:10 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 21.0.8 with PID 13540 (C:\Users\rromero2106\Desktop\Github\PSP\user-api-server\target\classes started by rromero2106 in C:\Users\rromero2106\Desktop\Github\PSP\user-api-server)
+2025-11-10 19:12:10 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-10 19:12:10 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 19:12:12 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-10 19:12:13 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-11-10 19:12:13 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-11-10 19:20:34 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 21.0.8 with PID 3540 (C:\Users\rromero2106\Desktop\Github\PSP\user-api-server\target\classes started by rromero2106 in C:\Users\rromero2106\Desktop\Github\PSP\user-api-server)
+2025-11-10 19:20:34 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-10 19:20:34 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 19:20:36 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-10 19:20:36 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-11-10 19:20:36 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-11-10 19:29:51 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 21.0.8 with PID 20348 (C:\Users\rromero2106\Desktop\Github\PSP\user-api-server\target\classes started by rromero2106 in C:\Users\rromero2106\Desktop\Github\PSP\user-api-server)
+2025-11-10 19:29:51 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-10 19:29:51 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 19:29:53 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'service': No qualifying bean of type 'service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-11-10 19:29:53 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field service in ceu.dam.ad.users.controller.UserController required a bean of type 'service.UserService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'service.UserService' in your configuration.
+
+2025-11-10 19:31:02 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 21.0.8 with PID 16528 (C:\Users\rromero2106\Desktop\Github\PSP\user-api-server\target\classes started by rromero2106 in C:\Users\rromero2106\Desktop\Github\PSP\user-api-server)
+2025-11-10 19:31:02 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-10 19:31:02 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 19:31:04 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'service': No qualifying bean of type 'service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-11-10 19:31:04 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field service in ceu.dam.ad.users.controller.UserController required a bean of type 'service.UserService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'service.UserService' in your configuration.
+
+2025-11-10 19:42:15 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 21.0.8 with PID 20192 (C:\Users\rromero2106\Desktop\Github\PSP\user-api-server\target\classes started by rromero2106 in C:\Users\rromero2106\Desktop\Github\PSP\user-api-server)
+2025-11-10 19:42:15 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-10 19:42:15 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 19:42:17 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'service': No qualifying bean of type 'service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-11-10 19:42:17 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field service in ceu.dam.ad.users.controller.UserController required a bean of type 'service.UserService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'service.UserService' in your configuration.
+
+2025-11-10 19:45:28 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 21.0.8 with PID 16284 (C:\Users\rromero2106\Desktop\Github\PSP\user-api-server\target\classes started by rromero2106 in C:\Users\rromero2106\Desktop\Github\PSP\user-api-server)
+2025-11-10 19:45:28 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-10 19:45:28 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 19:45:30 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'service': No qualifying bean of type 'service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-11-10 19:45:30 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field service in ceu.dam.ad.users.controller.UserController required a bean of type 'service.UserService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'service.UserService' in your configuration.
+
+2025-11-10 19:46:59 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 21.0.8 with PID 19620 (C:\Users\rromero2106\Desktop\Github\PSP\user-api-server\target\classes started by rromero2106 in C:\Users\rromero2106\Desktop\Github\PSP\user-api-server)
+2025-11-10 19:46:59 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-10 19:46:59 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 19:47:00 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'service': No qualifying bean of type 'service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-11-10 19:47:00 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field service in ceu.dam.ad.users.controller.UserController required a bean of type 'service.UserService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'service.UserService' in your configuration.
+
+2025-11-10 19:48:51 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 21.0.8 with PID 16428 (C:\Users\rromero2106\Desktop\Github\PSP\user-api-server\target\classes started by rromero2106 in C:\Users\rromero2106\Desktop\Github\PSP\user-api-server)
+2025-11-10 19:48:51 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-10 19:48:51 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 19:48:53 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'service': No qualifying bean of type 'service.UserServiceImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-11-10 19:48:53 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field service in ceu.dam.ad.users.controller.UserController required a bean of type 'service.UserServiceImpl' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'service.UserServiceImpl' in your configuration.
+
+2025-11-10 19:50:24 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 21.0.8 with PID 8344 (C:\Users\rromero2106\Desktop\Github\PSP\user-api-server\target\classes started by rromero2106 in C:\Users\rromero2106\Desktop\Github\PSP\user-api-server)
+2025-11-10 19:50:24 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-10 19:50:24 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 19:50:26 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'service': No qualifying bean of type 'service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-11-10 19:50:26 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field service in ceu.dam.ad.users.controller.UserController required a bean of type 'service.UserService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'service.UserService' in your configuration.
+
+2025-11-10 19:51:38 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 21.0.8 with PID 10744 (C:\Users\rromero2106\Desktop\Github\PSP\user-api-server\target\classes started by rromero2106 in C:\Users\rromero2106\Desktop\Github\PSP\user-api-server)
+2025-11-10 19:51:38 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-10 19:51:38 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 19:51:40 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-10 19:51:41 INFO  [main] ceu.dam.ad.users.App - Started App in 2.513 seconds (process running for 3.175)
+2025-11-10 19:52:41 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 21.0.8 with PID 16884 (C:\Users\rromero2106\Desktop\Github\PSP\user-api-server\target\classes started by rromero2106 in C:\Users\rromero2106\Desktop\Github\PSP\user-api-server)
+2025-11-10 19:52:41 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-10 19:52:41 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 19:52:43 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-10 19:52:43 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-11-10 19:52:43 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-11-10 19:53:35 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 21.0.8 with PID 2960 (C:\Users\rromero2106\Desktop\Github\PSP\user-api-server\target\classes started by rromero2106 in C:\Users\rromero2106\Desktop\Github\PSP\user-api-server)
+2025-11-10 19:53:35 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-10 19:53:35 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 19:53:37 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-10 19:53:37 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-11-10 19:53:37 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-11-10 20:03:41 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 21.0.8 with PID 18636 (C:\Users\rromero2106\Desktop\Github\PSP\user-api-server\target\classes started by rromero2106 in C:\Users\rromero2106\Desktop\Github\PSP\user-api-server)
+2025-11-10 20:03:41 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-10 20:03:41 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 20:03:43 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-10 20:03:43 INFO  [main] ceu.dam.ad.users.App - Started App in 2.515 seconds (process running for 3.202)
+2025-11-10 20:06:04 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 21.0.8 with PID 12996 (C:\Users\rromero2106\Desktop\Github\PSP\user-api-server\target\classes started by rromero2106 in C:\Users\rromero2106\Desktop\Github\PSP\user-api-server)
+2025-11-10 20:06:04 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-10 20:06:04 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 20:06:06 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-10 20:06:06 INFO  [main] ceu.dam.ad.users.App - Started App in 2.517 seconds (process running for 3.191)
+2025-11-10 20:06:32 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 21.0.8 with PID 23356 (C:\Users\rromero2106\Desktop\Github\PSP\user-api-server\target\classes started by rromero2106 in C:\Users\rromero2106\Desktop\Github\PSP\user-api-server)
+2025-11-10 20:06:32 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-10 20:06:32 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 20:06:34 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-10 20:06:35 INFO  [main] ceu.dam.ad.users.App - Started App in 2.525 seconds (process running for 3.197)
+2025-11-10 20:06:58 DEBUG [http-nio-8080-exec-2] c.d.ad.users.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=juan124, email=juan.perez@example.com, password=MiClaveSegura123, createdDate=null, lastLoginDate=null)
+2025-11-10 20:06:58 DEBUG [http-nio-8080-exec-2] c.d.ad.users.service.UserServiceImpl - Usuario creado con éxito con id 4
+2025-11-10 20:14:58 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 21.0.8 with PID 23000 (C:\Users\rromero2106\Desktop\Github\PSP\user-api-server\target\classes started by rromero2106 in C:\Users\rromero2106\Desktop\Github\PSP\user-api-server)
+2025-11-10 20:14:58 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-10 20:14:58 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 20:15:00 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-10 20:15:00 INFO  [main] ceu.dam.ad.users.App - Started App in 2.667 seconds (process running for 3.452)
+2025-11-10 20:15:07 WARN  [http-nio-8080-exec-2] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "login"]
+2025-11-10 20:15:31 WARN  [http-nio-8080-exec-4] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "login"]
+2025-11-10 20:26:46 WARN  [http-nio-8080-exec-6] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "login"]
+2025-11-10 20:27:33 DEBUG [http-nio-8080-exec-8] c.d.ad.users.service.UserServiceImpl - Realizando login con usuario null
+2025-11-10 20:27:33 DEBUG [http-nio-8080-exec-8] c.d.ad.users.service.UserServiceImpl - Intentando login por email...
+2025-11-10 20:27:33 DEBUG [http-nio-8080-exec-8] c.d.ad.users.service.UserServiceImpl - Intentando login por username...
+2025-11-10 20:27:33 DEBUG [http-nio-8080-exec-8] c.d.ad.users.service.UserServiceImpl - No existe usuario (email o username)
+2025-11-10 20:27:33 ERROR [http-nio-8080-exec-8] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: ceu.dam.ad.users.exception.UserNotFoundException: No existe usuario con el login indicado] with root cause
+ceu.dam.ad.users.exception.UserNotFoundException: No existe usuario con el login indicado
+	at ceu.dam.ad.users.service.UserServiceImpl.login(UserServiceImpl.java:114)
+	at ceu.dam.ad.users.controller.UserController.login(UserController.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
