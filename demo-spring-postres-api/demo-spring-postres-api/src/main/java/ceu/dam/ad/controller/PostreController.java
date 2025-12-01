@@ -15,14 +15,16 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import ceu.dam.ad.DemoSpringPerrosApiApplication;
+import ceu.dam.ad.PostresApiApplication;
 import ceu.dam.ad.Dto.request.PostreRequestDto;
 import ceu.dam.ad.Dto.request.PostreResponseDto;
 import ceu.dam.ad.model.Postre;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 
 
 @RestController
 @RequestMapping("/postre")
+@SecurityRequirement(name = "Authorization")
 public class PostreController {
 	//@Autowired 
 	//private ModelMapper mapper;

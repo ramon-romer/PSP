@@ -23,6 +23,7 @@ import ceu.dam.ad.users.exception.UserUnauthorizedException;
 import ceu.dam.ad.users.model.User;
 import ceu.dam.ad.users.service.UserService;
 import ceu.dam.ad.users.service.UserServiceImpl;
+import io.swagger.v3.oas.annotations.Operation;
 import jakarta.validation.Valid;
 @RestController
 @RequestMapping("/users")
@@ -32,7 +33,7 @@ public class UserController {
 	private UserService service;
 	
 	@PostMapping
-	public NewUserResponseDto createUser(@Valid @RequestBody UserResquestDto newUser) throws DuplicateUserException, UserException {
+	public NewUserResponseDto createUser(@RequestBody @Valid UserResquestDto newUser) throws DuplicateUserException, UserException {
 		ModelMapper modelMapper = new ModelMapper();
 		User user = modelMapper.map(newUser, User.class);
 		user = service.createUser(user);
@@ -50,6 +51,7 @@ public class UserController {
 	}
 	
 	@GetMapping("/{id}")
+	@Operation(summary = "Permite hacer login a un usuario utilizando ")
 	public UserResponseDto getById(@PathVariable Long id) throws UserNotFoundException, UserException {
 		User user = service.getUser(id);
 		return new ModelMapper().map(user, UserResponseDto.class);

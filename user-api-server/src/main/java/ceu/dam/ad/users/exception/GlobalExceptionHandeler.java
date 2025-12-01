@@ -9,8 +9,13 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import lombok.extern.log4j.Log4j2;
+
 @RestControllerAdvice
+@Log4j2
 public class GlobalExceptionHandeler {
+	
+	
 	@ExceptionHandler(UserNotFoundException.class)
 	public ResponseEntity<String> handle(UserNotFoundException e){
 		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
@@ -38,6 +43,8 @@ public class GlobalExceptionHandeler {
 	
 	@ExceptionHandler(Exception.class)
 	public ResponseEntity<String> handle(Exception e){
+		// TODO: meter traza de log
+		log.error("Error inesperado, Consultar traza ", e);
 		return ResponseEntity.internalServerError().body("Error inesperado en el servidor. Consulte el log del servidor si tiene acceso");
 	}
 	

@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoSpringPerrosApiApplication {
+public class PostresApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoSpringPerrosApiApplication.class, args);
+		SpringApplication.run(PostresApiApplication.class, args);
 	}
 
 }

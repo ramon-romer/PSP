@@ -8,6 +8,6 @@ import lombok.Data;
 public class UpdatePasswordRequestDto {
 	@NotBlank(message = "La password antigua no puede ser vacía")
 	private String oldPassword;
-	@Size(min = 8, max = 20, message = "La password nueva tiene que tener un tamaño entre 8 y 20")
+	@Size(min = 8, message = "La password nueva tiene que tener minimo 8 caracteres")
 	private String newPassword;
 }
