@@ -50,7 +50,7 @@ public class UserController {
 		return new ModelMapper().map(user, LoginRequestDto.class);
 	}
 	
-	@GetMapping("/{id}")
+	@GetMapping
 	@Operation(summary = "Permite hacer login a un usuario utilizando ")
 	public UserResponseDto getById(@PathVariable Long id) throws UserNotFoundException, UserException {
 		User user = service.getUser(id);
