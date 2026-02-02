@@ -1,14 +1,17 @@
 package ceu.dam.ad.users.dto.request;
 
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
+import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
 
 @Data
 public class LoginRequestDto {
-	@Email(message = "El login no puede ser en blanco")
+
+	@NotEmpty(message = "El username es obligatorio")
+	@Schema(description = "Username o email")
 	private String login;
-	@NotNull(message = "La contraseña no puede estar en blanco")
+	
+	@NotEmpty(message = "El password es obligatorio")
+	@Schema(description = "Password en claro sin cifrar")
 	private String password;
 }

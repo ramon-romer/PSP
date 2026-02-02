@@ -22,6 +22,7 @@ import ceu.dam.ad.users.exception.UserNotFoundException;
 import ceu.dam.ad.users.exception.UserUnauthorizedException;
 import ceu.dam.ad.users.model.User;
 import ceu.dam.ad.users.service.UserService;
+import io.swagger.v3.oas.annotations.Operation;
 import jakarta.validation.Valid;
 
 @RestController
@@ -32,7 +33,7 @@ public class UserController {
 	private UserService service;
 	
 	@PostMapping
-	public NewUserResponseDto createUser(@Valid @RequestBody NewUserRequestDto newUser) throws DuplicateUserException, UserException {
+	public NewUserResponseDto createUser(@RequestBody @Valid NewUserRequestDto newUser) throws DuplicateUserException, UserException {
 		ModelMapper modelMapper = new ModelMapper();
 		User user = modelMapper.map(newUser, User.class);
 		user = service.createUser(user);
@@ -40,12 +41,13 @@ public class UserController {
 	}
 	
 	@PutMapping("/{id}/password")
-	public void changePassword(@PathVariable Long id, @Valid @RequestBody UpdatePasswordRequestDto request) throws UserNotFoundException, UserUnauthorizedException, UserException {
+	public void changePassword(@PathVariable  Long id, @Valid @RequestBody UpdatePasswordRequestDto request) throws UserNotFoundException, UserUnauthorizedException, UserException {
 		service.changePassword(id, request.getOldPassword(), request.getNewPassword());
 	}
 	
 	@PostMapping("/login")
-	public LoginResponseDto login(@Valid @RequestBody LoginRequestDto request) throws UserNotFoundException, UserUnauthorizedException, UserException {
+	@Operation(summary = "Permite hacer login a un usuario utilizando su username o su email")
+	public LoginResponseDto login(@RequestBody @Valid LoginRequestDto request) throws UserNotFoundException, UserUnauthorizedException, UserException {
 		User user = service.login(request.getLogin(), request.getPassword());
 		return new ModelMapper().map(user, LoginResponseDto.class);
 	}
