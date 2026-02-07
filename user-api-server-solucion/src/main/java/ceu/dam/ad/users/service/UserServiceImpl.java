@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import ceu.dam.ad.users.exception.DuplicateUserException;
@@ -24,6 +25,9 @@ public class UserServiceImpl  implements UserService {
 
 	@Autowired
 	private UserRepository repository;
+	
+	@Autowired
+	private PasswordEncoder passwordEncoder;
 
 	@Override
 	public User createUser(User user) throws DuplicateUserException, UserException {
@@ -41,7 +45,7 @@ public class UserServiceImpl  implements UserService {
 				throw new DuplicateUserException("Ya existe usuario con el username indicado");
 			}
 			// 2. Cifrar password y poner fecha alta
-			String passwordCifrada = DigestUtils.sha256Hex(user.getPassword());
+			String passwordCifrada = passwordEncoder.encode(user.getPassword());
 			user.setPassword(passwordCifrada);
 			user.setCreatedDate(LocalDate.now());
 
@@ -77,13 +81,12 @@ public class UserServiceImpl  implements UserService {
 			User user = userOpt.get();
 			
 			// 2. Comprobamos password antigua
-			String passwordCipherOld = DigestUtils.sha256Hex(oldPassword);
-			if (!user.getPassword().equals(passwordCipherOld)) {
+			if (!passwordEncoder.matches(oldPassword, user.getPassword())) {
 				log.debug("Pass indicada para cambio incorrecta ");
 				throw new UserUnauthorizedException("El password no es correcto");
 			}
 			
-			String passwordCipherNew = DigestUtils.sha256Hex(newPassword);
+			String passwordCipherNew = passwordEncoder.encode(newPassword);
 			user.setPassword(passwordCipherNew);
 			repository.save(user);
 			log.debug("Password cambiada con exito");
@@ -113,8 +116,7 @@ public class UserServiceImpl  implements UserService {
 			User user = userOpt.get();
 			
 			// 2. Comprobar password cifrándola previamente
-			String passwordCipher = DigestUtils.sha256Hex(password);
-			if (!user.getPassword().equals(passwordCipher)) {
+			if (!passwordEncoder.matches(password, user.getPassword())) {  
 				log.debug("Password incorrecta");
 				throw new UserUnauthorizedException("Password de usuario incorrecta");
 			}
@@ -151,6 +153,18 @@ public class UserServiceImpl  implements UserService {
 			log.error("Error actualizando pass de usuario ", e);
 			throw new UserException("Error actualizando usuario", e);
 		}
+	}
+	
+	public User findUserByLogin(String login) throws UserNotFoundException {
+		log.debug("Buscando usuario con login: " + login);
+		Optional<User> userOpt = repository.findOneByEmail(login);
+		if (userOpt.isEmpty()) {
+			userOpt = repository.findOneByUsername(login);
+		}
+		if (userOpt.isEmpty()) {
+			throw new UserNotFoundException("No existe usuario con el login indicado");
+		}
+		return userOpt.get();
 	}
 
 }

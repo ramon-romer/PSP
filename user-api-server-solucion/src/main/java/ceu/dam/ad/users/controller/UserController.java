@@ -2,6 +2,9 @@ package ceu.dam.ad.users.controller;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import ceu.dam.ad.users.dto.request.LoginRequestDto;
 import ceu.dam.ad.users.dto.request.NewUserRequestDto;
 import ceu.dam.ad.users.dto.request.UpdatePasswordRequestDto;
+import ceu.dam.ad.users.dto.response.JwtResponse;
 import ceu.dam.ad.users.dto.response.LoginResponseDto;
 import ceu.dam.ad.users.dto.response.NewUserResponseDto;
 import ceu.dam.ad.users.dto.response.UserResponseDto;
@@ -21,6 +25,7 @@ import ceu.dam.ad.users.exception.UserException;
 import ceu.dam.ad.users.exception.UserNotFoundException;
 import ceu.dam.ad.users.exception.UserUnauthorizedException;
 import ceu.dam.ad.users.model.User;
+import ceu.dam.ad.users.security.JwtService;
 import ceu.dam.ad.users.service.UserService;
 import io.swagger.v3.oas.annotations.Operation;
 import jakarta.validation.Valid;
@@ -28,7 +33,13 @@ import jakarta.validation.Valid;
 @RestController
 @RequestMapping("/users")
 public class UserController {
+	
+	@Autowired
+	private AuthenticationManager authenticationManager;
 
+	@Autowired
+	private JwtService jwtService;
+	
 	@Autowired
 	private UserService service;
 	
@@ -47,9 +58,19 @@ public class UserController {
 	
 	@PostMapping("/login")
 	@Operation(summary = "Permite hacer login a un usuario utilizando su username o su email")
-	public LoginResponseDto login(@RequestBody @Valid LoginRequestDto request) throws UserNotFoundException, UserUnauthorizedException, UserException {
-		User user = service.login(request.getLogin(), request.getPassword());
-		return new ModelMapper().map(user, LoginResponseDto.class);
+	public ResponseEntity<?> login(@RequestBody @Valid LoginRequestDto request) throws UserNotFoundException, UserUnauthorizedException, UserException {
+		// 👉 Spring valida usuario y contraseña
+	    authenticationManager.authenticate(
+	            new UsernamePasswordAuthenticationToken(
+	                    request.getLogin(),
+	                    request.getPassword()
+	            )
+	    );
+
+	    // 👉 Si todo va bien, generamos JWT
+	    String token = jwtService.generateToken(request.getLogin());
+
+	    return ResponseEntity.ok(new JwtResponse(token));
 	}
 
 	@GetMapping("/{id}")

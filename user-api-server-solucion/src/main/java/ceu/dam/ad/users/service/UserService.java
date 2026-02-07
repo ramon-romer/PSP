@@ -1,5 +1,7 @@
 package ceu.dam.ad.users.service;
 
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+
 import ceu.dam.ad.users.exception.DuplicateUserException;
 import ceu.dam.ad.users.exception.UserException;
 import ceu.dam.ad.users.exception.UserNotFoundException;
@@ -16,7 +18,7 @@ public interface UserService {
 	
 	public User getUser(Long idUser) throws UserNotFoundException, UserException;
 	
-	
+	public User findUserByLogin(String login) throws UsernameNotFoundException, UserNotFoundException;
 	
 	
 }
