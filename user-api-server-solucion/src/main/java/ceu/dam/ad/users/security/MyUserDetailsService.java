@@ -28,7 +28,7 @@ public class MyUserDetailsService implements UserDetailsService {
         	User user = userService.findUserByLogin(username);
             return org.springframework.security.core.userdetails.User
                     .withUsername(user.getUsername())
-                    .password(user.getPassword()) // ya debe estar hasheada
+                    .password(user.getPassword())
                     .build();
         } catch (UserNotFoundException e) {
             throw new UsernameNotFoundException("Usuario no encontrado: " + username);

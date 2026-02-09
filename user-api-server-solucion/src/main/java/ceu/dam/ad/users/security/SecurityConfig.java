@@ -22,9 +22,11 @@ public class SecurityConfig {
         this.jwtAuthFilter = jwtAuthFilter;
     }
 
+    // Define las reglas de seguridad de tu aplicación.
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http
+        // Crea el filtro principal de seguridad de Spring.
+    	http
             .csrf(csrf -> csrf.disable())
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers("/users/login", "/users").permitAll()
@@ -38,12 +40,14 @@ public class SecurityConfig {
         return http.build();
     }
 
+    //Devuelve el AuthenticationManager, que Spring usa para verificar usuario y contraseña en el login
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration config)
             throws Exception {
         return config.getAuthenticationManager();
     }
     
+    //Codifica la contraseña
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
