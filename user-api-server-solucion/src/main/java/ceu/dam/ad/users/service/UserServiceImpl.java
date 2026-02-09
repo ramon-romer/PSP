@@ -155,6 +155,7 @@ public class UserServiceImpl  implements UserService {
 		}
 	}
 	
+	// Busca el usuario sin validar contraseña
 	public User findUserByLogin(String login) throws UserNotFoundException {
 		log.debug("Buscando usuario con login: " + login);
 		Optional<User> userOpt = repository.findOneByEmail(login);

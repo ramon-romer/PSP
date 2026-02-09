@@ -13,7 +13,7 @@ public class JwtService {
     private final Key secretKey = Keys.secretKeyFor(SignatureAlgorithm.HS256);
     private final long EXPIRATION_TIME = 1000 * 60 * 60; // 1 hora
 
-    // Genera un token con el username dentro
+    // Genera un token con el nombre y fecha de expiracion
     public String generateToken(String username) {
         return Jwts.builder()
                 .setSubject(username)
@@ -23,7 +23,7 @@ public class JwtService {
                 .compact();
     }
 
-    // 👉 Saca el username del token
+    // Saca el NOMBRE del token
     public String extractUsername(String token) {
         return Jwts.parserBuilder()
                 .setSigningKey(secretKey)
@@ -33,7 +33,7 @@ public class JwtService {
                 .getSubject();
     }
 
-    // 👉 Comprueba si el token es válido
+    // Comprueba si el token es válido
     public boolean isTokenValid(String token) {
         try {
             Jwts.parserBuilder()

@@ -59,7 +59,7 @@ public class UserController {
 	@PostMapping("/login")
 	@Operation(summary = "Permite hacer login a un usuario utilizando su username o su email")
 	public ResponseEntity<?> login(@RequestBody @Valid LoginRequestDto request) throws UserNotFoundException, UserUnauthorizedException, UserException {
-		// 👉 Spring valida usuario y contraseña
+		// Spring valida usuario y contraseña
 	    authenticationManager.authenticate(
 	            new UsernamePasswordAuthenticationToken(
 	                    request.getLogin(),
@@ -67,7 +67,7 @@ public class UserController {
 	            )
 	    );
 
-	    // 👉 Si todo va bien, generamos JWT
+	    // Si todo va bien, generamos JWT
 	    String token = jwtService.generateToken(request.getLogin());
 
 	    return ResponseEntity.ok(new JwtResponse(token));

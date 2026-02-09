@@ -19,7 +19,8 @@ public class MyUserDetailsService implements UserDetailsService {
     public MyUserDetailsService(UserService userService) {
         this.userService = userService;
     }
-
+    
+    //Devuelve un userDetails que Spring usa para validar las credenciales
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         try {
